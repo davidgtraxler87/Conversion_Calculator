@@ -1,0 +1,59 @@
+<script language = "JavaScript">
+   function computeResults() {
+	pints = parseFloat(document.form1.pints.value);
+	quarts = parseFloat(document.form1.quarts.value);
+	gallons = (quarts / 4) + (pints / 8);
+	document.form1.gallons.value = gallons;
+	document.form1.liters.value = gallons * 3.78541;
+
+
+      //document.form1.gallons.value = "TEST";
+    }	
+
+</script>
+
+<!-- TR - Table Row, TD - Table Date (Column) -->
+<form name = "form1">
+<h2> Conversion Calculator </h2>
+<table border = "2" bgcolor = "33C7FF" cellpadding = "10" >
+<tr>
+<td align = "right"> Pints: </td>
+<td> <input type = "text" name = "pints" size = "5" value = "8"> </td>
+</tr>
+
+<tr>
+<td align = "right"> Quarts: </td>
+<td> <input type = "text" name = "quarts" size = "5" value = "4"> </td>
+</tr>
+
+
+<tr>
+<td colspan = "2" >
+<input type = "button" value = "Compute Total" onclick = "computeResults()">  </td>
+</tr>
+
+
+
+<tr>
+<td align = "right"> Gallons: </td>
+<td> <input type = "text" name = "gallons" size = "5" value = ""> </td>
+</tr>
+
+
+<td> Liters </td>
+<td> <input type = "text" name = "liters" size = "5" value = ""> </td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+
+
+
+
+
+ 
+
